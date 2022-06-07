@@ -1,0 +1,92 @@
+<!doctype html>
+	<html lang="ko">
+	<head>
+		<meta charset="utf-8">
+		<title>IOT 소개 웹페이지</title> <!-- 타이틀 설정 -->
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<script src="script.js"></script>
+	</head>
+	<body onload="init()">
+		<div id="container">
+			<header id="header">
+				<h1>사물 인터넷 (IOT)</h1> <!-- 문단 제목 -->
+			</header>
+			<nav id="menubar">
+				<ul>
+					<li><a href="iframe_iot.html" target="if">About IoT</a></li>
+					<li><a href="iframe_sensor.html" target="if">Sensor</a></li>
+					<li><a href="iframe_network.html" target="if">Network</a></li>
+					<li><a href="iframe_data.html" target="if">Data</a></li>
+					<li><a href="iframe_ui.html" target="if">UI</a></li>
+					<li><a href="iframe_future.html" target="if">Future of IoT</a></li>
+				</ul>
+			</nav>
+			<section id="main">
+				<iframe src="iframe_iot.html" name=if></iframe>
+			</section>
+			<aside>
+				<section id="myInfoBox">
+					<center>
+						<canvas id="myCanvas" width="200" height="60"></canvas>
+						<script type="text/javascript">
+							let canvas=document.getElementById("myCanvas");
+							let context=canvas.getContext("2d");
+
+							context.beginPath();
+							context.rect(5,50,156,10);
+							context.fillStyle="pink";
+							context.fill();
+							context.strokeStyle="mediumpurple";
+							context.lineWidth=1;
+							context.font="italic 35px arial";
+							context.strokeText("My Profile",5,50);
+						</script>
+					</center>
+
+					<center><h2>이유빈</h2></center><br>
+					<center>
+						<img src="image/my_emoji.png" alt="My Emoji" width="100px" height="100px"> <!-- 이미지 삽입 -->
+					</center>
+					<ul id="myInfoList">
+						<!-- 하이퍼링크 (target 속성 지정) -->
+						<li><a class="info" id="l0" href="mailto:youbbqlsl@gmail.com">Mail</a></li>
+						<li><a class="info" id="l1" href="https://github.com/youbbin" target="_blank">Github</a></li>
+						<li><a class="info" id="l2" href="https://blog.naver.com/youbin5478" target="_blank">Blog</a></li>
+					</ul>
+					<div id="commentDiv" style="position:absolute;"></div>
+				</section>
+				<section id="quizBox">
+					<form> <!-- 웹폼(버튼) -->
+						<center><h2>IoT Quiz</h2></center><br>
+						<center>
+							Quiz에 도전하려면 버튼을 눌러주세요.
+						</center><br>
+						<center>
+							<input type="button" value="Quiz 풀기" title="버튼입니다" id="quizButton" onclick="quiz()"> <!-- 버튼에 툴팁달기  -->
+						</center>
+					</form>
+				</section>
+				<form>
+					<input type="search" placeholder="검색어" size="17">
+					<input type="button" value="검색">
+				</form>
+
+			</aside>
+			<footer id="footer">
+				<table>
+					<tr>
+						<td rowspan="3">Reference&nbsp;&nbsp;&nbsp;&nbsp;</td>
+						<td><a href="http://www.kmooc.kr/courses/course-v1:KoreaUnivK+ku_eng_005+2021_A16/about">고려대학교 K-MOOK "사물인터넷"</a></td>
+					</tr>
+					<tr>
+						<td><a href="https://www.samsungsds.com/kr/insights/1232581_4627.html">삼성SDS "빅데이터란 무엇인가 '사물인터넷과 빅데이터'"</a></td>
+					</tr>
+					<tr>
+						<td><a href="http://icunow.co.kr/%EC%82%AC%EB%AC%BC%EC%9D%B8%ED%84%B0%EB%84%B7%EA%B3%BC-%EB%94%94%EC%9E%90%EC%9D%B8-%EB%8B%A4%EC%84%AF%EA%B0%80%EC%A7%80-%EC%9D%B4%EC%95%BC%EA%B8%B0/">사물인터넷과 디자인, 다섯가지 이야기</a></td>
+					</tr>
+				</table>
+			</footer>
+		</div>
+	</body>
+	</html>
+	</html>

@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap');
+
+body{
+    font-family: 'Do Hyeon', sans-serif; /*텍스트 꾸미기 (폰트 설정)*/
+}
+
+/*id 셀렉터*/
+div#container {
+    width: 940px;
+    margin: 10px auto;
+    padding: 20px;
+    border: 1px solid #bcbcbc;
+}
+header#header {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #bcbcbc;
+}
+#menubar {
+    padding: 0px;
+    height: 30px;
+    margin-bottom: 20px;
+    background-color: lightpink;
+}
+#menubar ul{
+    margin: 0 auto;
+    padding: 0px;
+    width: auto;
+    overflow: hidden; /*배치 overflow 속성*/
+}
+#menubar ul li{
+    list-style-type: none;
+    display: inline-block;
+    border-left: 1px solid white;
+    float: left;
+    text-align: center;
+    line-height: 30px;
+    padding: 0px 52px;
+}
+#menubar ul li a{
+    text-decoration: none;
+    color: white;
+}
+#menubar ul li a:hover{
+    color: black;
+}
+
+section#main {
+    width: 670px;
+    padding: 0px;
+    margin-bottom: 20px;
+    float: left;
+}
+
+#section h3{
+    color: palevioletred;
+}
+
+iframe{
+    width:700px;
+    height:750px;
+    border:none;
+    padding-left: 10px;
+    margin: 0;
+    border: 1px solid #bcbcbc;
+    overflow: hidden;
+}
+
+body#iframeBody{ /*동적 변화(애니메이션)*/
+    width: 670px;
+    animation-duration: 1s;
+    animation-name: slideIn;
+
+}
+
+@keyframes slideIn{
+    from{
+        margin-left: 100%;
+        width: 670px;
+    }
+    to{
+        margin-left: 0%;
+        width: 670px;
+    }
+}
+aside{
+   width: 200px;
+   padding: 0px;
+   margin-bottom: 10px;
+   float: right;
+}
+aside section{
+    width: 160px;
+    padding: 20px;
+    margin-bottom: 20px;
+    float: right;
+    border: 1px solid #bcbcbc;
+}
+
+ul#myInfoList{
+    list-style-type: square; /*리스트 꾸미기(마커: 사각형)*/
+    padding: 15px;
+}
+
+ul#myInfoList li a{
+    text-decoration: none;
+    color: black;
+}
+ul#myInfoList li a:hover{
+    color: pink;
+}
+
+section#quizBox{
+    box-shadow: 5px 5px 5px; /*박스 그림자*/
+}
+section#quizBox h2{
+    color: white;
+    background-color: darkred;
+}
+footer#footer {
+    clear: both;
+    padding: 10px;
+    border: 1px solid #bcbcbc;
+}
+
+
+
+
